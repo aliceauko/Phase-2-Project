@@ -28,7 +28,14 @@ function App(){
   
 ]);
  const addnewNote = (write)=>{
-
+ const date = new Date();
+ const newNote ={
+  id: nanoid(),
+   write: write,
+   date : date.toLocaleDateString()
+ }
+ const newNotes = [...newnote,newNote];
+ setNewnote(newNotes)
  }
   return(
     <div className="contain">
