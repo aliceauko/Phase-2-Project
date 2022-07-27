@@ -42,3 +42,27 @@ code {
 
 }
 
+.note.newnote{
+  background-color:blue;
+
+
+}
+textarea{
+  resize: none;
+  border: none;
+  background-color: blue;
+}
+textarea:focus{
+  outline: none;
+}
+
+.savenote{
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+.savenote:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
