@@ -18,12 +18,18 @@ function App(){
     id:nanoid(),
     write: "This is my third note",
     date:"28/04/2021",
+  },
+  {
+    id:nanoid(),
+    write: "This is my fourth note",
+    date:"2/05/2021",
   }
+  
   
 ]);
   return(
     <div className="contain">
-      <Notes notes={newnote}/>
+      <Notes newnote={newnote}/>
       
     </div>
   )

@@ -1,13 +1,13 @@
 import React from 'react'
 import Note from "./Note.js";
 
-function Notes() {
+function Notes({newnote}) {
   return (
     <div className='notes'>
-        <Note/>
-        <Note/>
-        <Note/>
-        <Note/>
+      {newnote.map((note)=> (
+      <Note id={note.id} write={note.write} date={note.date}/>
+      ))}
+ 
     </div>
   )
 }
