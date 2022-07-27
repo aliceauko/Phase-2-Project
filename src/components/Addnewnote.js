@@ -11,6 +11,7 @@ function Addnewnote({handleAddnewNote}) {
     const handleSavenote =()=>{
         if(writenote.trim().length >0){
             handleAddnewNote(writenote);
+            setWriteNote('');
         }
 
 
