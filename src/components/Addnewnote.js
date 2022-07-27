@@ -9,7 +9,10 @@ function Addnewnote({handleAddnewNote}) {
     }
 
     const handleSavenote =()=>{
-handleAddnewNote(writenote)
+        if(writenote.trim().length >0){
+            handleAddnewNote(writenote);
+        }
+
 
     }
   return (

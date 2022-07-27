@@ -27,10 +27,11 @@ function App(){
   
   
 ]);
+
  const addnewNote = (write)=>{
  const date = new Date();
  const newNote ={
-  id: nanoid(),
+   id: nanoid(),
    write: write,
    date : date.toLocaleDateString()
  }
