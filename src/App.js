@@ -27,9 +27,12 @@ function App(){
   
   
 ]);
+ const addnewNote = (write)=>{
+
+ }
   return(
     <div className="contain">
-      <Notes newnote={newnote}/>
+      <Notes newnote={newnote} handleAddnewNote={addnewNote}/>
       
     </div>
   )
