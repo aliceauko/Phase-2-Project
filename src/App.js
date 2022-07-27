@@ -38,9 +38,17 @@ function App(){
  const newNotes = [...newnote,newNote];
  setNewnote(newNotes)
  }
+
+const deleteNotes =(id)=>{
+ const newUpdatedNotes= newnote.filter((note)=> note.id !==id);
+ setNewnote(newUpdatedNotes)
+
+}
+
   return(
     <div className="contain">
-      <Notes newnote={newnote} handleAddnewNote={addnewNote}/>
+      <Notes newnote={newnote} handleAddnewNote={addnewNote}
+      handleDeletenote={deleteNotes}/>
       
     </div>
   )

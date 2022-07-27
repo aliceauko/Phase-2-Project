@@ -32,6 +32,7 @@ code {
   border-radius: 10px;
   padding:1rem;
   min-height: 150px;
+  white-space: pre-wrap;
  
 
 }
@@ -64,5 +65,9 @@ textarea:focus{
 }
 .savenote:hover{
   background-color: yellow;
+  cursor: pointer;
+}
+
+.delete-note{
   cursor: pointer;
 }
